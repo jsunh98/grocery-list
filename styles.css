@@ -2,8 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI';
+    --color1: #161816a1;
+    --color2: #ff5900ab;
+    --color3: #2c2928ac;
+    --color4: #22da90b9;
 }
 body {
-    background: #222;
-    color: #fff
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,var(--color1), var(--color2), var(--color3), var(--color4),var(--color1), var(--color2), var(--color3), var(--color4),var(--color1), var(--color2), var(--color3), var(--color4),var(--color1), var(--color2), var(--color3), var(--color4),var(--color1), var(--color2), var(--color3), var(--color4),var(--color1), var(--color2), var(--color3), var(--color4));
+ 
+}
+.container {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .box {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.4);
+}
+.container .box h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+.container .box #grocery {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.container .box #grocery input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    outline: none;
+}
+.container .box #grocery button {
+    background: #07bd2bdd;
+    color: #fff;
+    padding: 5px;
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid #333;
+    cursor: pointer;
+    outline: none;
+}
+.container ol {
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    min-height: 398px;
+    background: #fff repeating-linear-gradient(transparent 0%, transparent
+    99%, #000 99%, #000 100%);
+    background-size: 50px 50px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.4);
+}
+.container ol li {
+    position: relative;
+    font-size: 1.5em;
+    height: 50px;
 }
