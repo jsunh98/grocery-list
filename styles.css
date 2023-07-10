@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 .container .box {
     position: relative;
@@ -29,6 +30,7 @@ body {
     background: #fff;
     padding: 20px;
     box-shadow: 15px 15px 15px rgba(0,0,0,0.4);
+    border-radius: 20px 20px 0 0;
 }
 .container .box h2 {
     font-size: 1.75em;
@@ -69,6 +71,7 @@ body {
     99%, #000 99%, #000 100%);
     background-size: 50px 50px;
     box-shadow: 15px 15px 15px rgba(0,0,0,0.4);
+    border-radius: 0 0 20px 20px;
 }
 .container ol li {
     position: relative;
